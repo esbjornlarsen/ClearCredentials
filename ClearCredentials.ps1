@@ -30,7 +30,6 @@ IF ($svnCount -gt 0)
 $vshash = @{};
 $vshash['VS2013']='12.0';
 $vshash['VS2015']='14.0';
-$vshash['VS2017']='15.0';
 
 foreach ($value in $vshash.Values)
 {
@@ -58,11 +57,3 @@ IF((Get-ChildItem -Path $regUserCacheGeneric -ErrorAction SilentlyContinue).Coun
 {
     Remove-Item -Path $regUserCacheGeneric\* -Recurse -Force;
 }
-
-#$regUserKeychain = "HKCU:\Software\Microsoft\VSCommon\Keychain\Accounts";
-#IF((Get-ChildItem -Path $regUserKeychain -ErrorAction SilentlyContinue).Count -gt 0)
-#{
-#    Remove-Item -Path $regUserKeychain\* -Recurse -Force;
-#}
-
-
