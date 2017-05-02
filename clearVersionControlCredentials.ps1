@@ -45,11 +45,3 @@ IF((Get-ChildItem -Path $regUserCacheGeneric -ErrorAction SilentlyContinue).Coun
 {
     Remove-Item -Path $regUserCacheGeneric\* -Recurse -Force;
 }
-
-#$regUserKeychain = "HKCU:\Software\Microsoft\VSCommon\Keychain\Accounts";
-#IF((Get-ChildItem -Path $regUserKeychain -ErrorAction SilentlyContinue).Count -gt 0)
-#{
-#    Remove-Item -Path $regUserKeychain\* -Recurse -Force;
-#}
-
-
