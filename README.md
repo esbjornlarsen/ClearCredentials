@@ -1,4 +1,4 @@
-# ClearCredentials
+# ClearCredentialsForSVNTFS
 Simple script to clear out credentials for Visual Studio 2013/2015 TFS and Subversion on a local computer.
 
 ## Purpose
